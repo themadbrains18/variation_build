@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tmb_stack{
+    background-color: #fff;
+}
+input[type="text"]{
+    border: 1 solid #000 !important;
+}
+
+.tabList{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 15px 25px;
+    border-bottom: 2px solid #ccc;
+}
+
+.tabLink{
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #fff;
+    display: inline-block;
+    transition: 0.3s linear;
+    border-radius: 5px;
+}
+
+.tabLink.active,
+.tabLink:hover{
+    background-color: #ddd;
+}
+
+
+.main_content{
+    padding: 25px;
+}
+
+.media_selected_case.active > span{
+    outline: 2px solid #000;
+}
+
+th span.Polaris-Checkbox__Backdrop {
+    display: none;
+}
+.tmb_grid{
+    cursor: pointer;
+}
+.tmb_grid.activeClass {
+    outline: 2px solid #000;
+    border-radius: 10px;
+}
+
+.overlayContainer{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    top: 0;
+    left: 0;
+    z-index: 0;
+    visibility: hidden;
+}
+
+.overlayContainer.active{
+    visibility: visible;
+    z-index: 1111;
+}
+
+.overlayContainer span.Polaris-Spinner.Polaris-Spinner--sizeLarge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%) !important;
+}
+.main-edit-outer{
+    position: relative;
+}
+.pair-edit {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
